@@ -36,7 +36,7 @@ class _GalleryState extends State<Gallery> with SingleTickerProviderStateMixin {
               onTap: (){
                 Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => PhotoPage(url: photo.urls.regular)));
+                    MaterialPageRoute(builder: (context) => PhotoPage(url: photo.urls.full)));
               },
               child: GridTile(
                 child: CachedNetworkImage(
